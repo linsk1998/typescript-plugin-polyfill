@@ -1,0 +1,48 @@
+{
+	"name": "typescript-plugin-polyfill",
+	"version": "0.0.0",
+	"description": "A TypeScript plugin for precisely inserting polyfill imports based on actual usage",
+	"keywords": [
+		"typescript",
+		"ts",
+		"plugin",
+		"polyfill",
+		"transform",
+		"transformer",
+		"useBuiltIns",
+		"usage"
+	],
+	"author": "linsk",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/linsk1998/typescript-plugin-polyfill.git"
+	},
+	"bugs": {
+		"url": "https://github.com/linsk1998/typescript-plugin-polyfill/issues"
+	},
+	"homepage": "https://github.com/linsk1998/typescript-plugin-polyfill#readme",
+	"main": "dist/index.js",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc",
+		"clean": "rimraf dist",
+		"test": "mocha tests/**/*.test.js",
+		"prebuild": "npm run clean",
+		"prepublishOnly": "npm run build && npm run test"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^12.1.4",
+		"mocha": "^8.0.1",
+		"rimraf": "^6.0.1",
+		"rollup": "3.0.0",
+		"tslib": "^2.8.1",
+		"typescript": "^5.9.2"
+	}
+}

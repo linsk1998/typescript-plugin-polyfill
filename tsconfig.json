@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"lib": [ "DOM", "ESNext" ],
+		"target": "ESNext",
+		"module": "commonjs",
+		"moduleDetection": "force",
+		"esModuleInterop": false,
+		"strict": false,
+		"skipLibCheck": false,
+		"outDir": "dist",
+		"rootDir": "src",
+		"declaration": false,
+		"sourceMap": false
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
+}

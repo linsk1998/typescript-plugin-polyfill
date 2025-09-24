@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"lib": [ "DOM", "ESNext" ],
+		"target": "ESNext",
+		"module": "esnext",
+		"moduleDetection": "force",
+		"esModuleInterop": false,
+		"strict": false,
+		"noEmit": true,
+		"declaration": false,
+		"sourceMap": false
+	},
+	"include": [
+		"./cases/*.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
+}
