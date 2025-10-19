@@ -6,7 +6,7 @@
 		"moduleDetection": "force",
 		"esModuleInterop": false,
 		"strict": false,
-		"skipLibCheck": false,
+		"skipLibCheck": true,
 		"outDir": "dist",
 		"rootDir": "src",
 		"declaration": false,

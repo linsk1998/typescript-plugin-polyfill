@@ -131,7 +131,7 @@ module.exports = {
 };
 ```
 
-### With ttypescript
+### With ts-patch/ttypescript
 
 ```json
 {

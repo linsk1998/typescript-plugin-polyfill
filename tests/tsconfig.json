@@ -6,9 +6,35 @@
 		"moduleDetection": "force",
 		"esModuleInterop": false,
 		"strict": false,
-		"noEmit": true,
+		"skipLibCheck": true,
 		"declaration": false,
-		"sourceMap": false
+		"sourceMap": false,
+		"newLine": "LF",
+		"outDir": "./fixtures",
+		"plugins": [
+			{
+				"transform": "../dist/index.js",
+				"polluting": {
+					"at": {
+						"Array": "sky-core/polyfill/Array/prototype/at",
+						"String": "sky-core/polyfill/String/prototype/at"
+					},
+					"includes": {
+						"Array": "sky-core/polyfill/Array/prototype/includes",
+						"String": "sky-core/polyfill/String/prototype/includes"
+					},
+					"name": {
+						"Function": "sky-core/polyfill/Function/prototype/name"
+					},
+					"finally": {
+						"Promise": "sky-core/polyfill/Promise/prototype/finally"
+					},
+					"toJSON": {
+						"Date": "sky-core/polyfill/Date/prototype/toJSON"
+					}
+				}
+			}
+		]
 	},
 	"include": [
 		"./cases/*.ts"
